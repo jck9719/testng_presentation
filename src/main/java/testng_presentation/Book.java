@@ -1,0 +1,37 @@
+package testng_presentation;
+
+public class Book {
+    private String bName;
+    private double price;
+
+    public Book(String bName, double price) {
+        this.bName = bName;
+        this.price = price;
+    }
+
+    public Book() {}
+
+    public String getbName() {
+        return bName;
+    }
+
+    public void setbName(String bName) {
+        this.bName = bName;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    @Override
+    public String toString() {
+        return "Book{" +
+                "bName='" + bName + '\'' +
+                ", price=" + price +
+                '}';
+    }
+}
