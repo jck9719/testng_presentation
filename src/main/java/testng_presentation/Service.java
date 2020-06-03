@@ -68,7 +68,10 @@ public class Service {
     public String printBooks() {
         return bookList.stream()
                 .map(String::valueOf)
-                .collect(Collectors.joining("\n{", "{", "}"));
+                .collect(Collectors
+                        .joining("\n{"
+                                , "{"
+                                , "}"));
     }
 
     //Count sum

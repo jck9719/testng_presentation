@@ -130,6 +130,7 @@ public class ServiceTest {
     @Test
     public void tempMethod() {
         System.out.println("Metoda potrzebna do ukazania dependsOnMethods");
+        Assert.assertTrue(true);
     }
 
 
