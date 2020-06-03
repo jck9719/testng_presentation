@@ -11,12 +11,12 @@ public class BasicServiceTest {
     Book bookBeta = new Book("Beta", 37);
 
 
-    @BeforeTest
+    @BeforeMethod
     public void setUp() {
         service = new Service();
     }
 
-    @AfterTest
+    @AfterMethod
     public void tearDown() {
         service = null;
     }
@@ -62,7 +62,10 @@ public class BasicServiceTest {
         service.addBook(bookAlpha);
         service.addBook(bookBeta);
 
-        Assert.assertEquals(service.countBooks(), 0);
+        Assert.assertNotEquals(service.countBooks(), 0);
     }
+
+//    @Test
+//    public void
 
 }
